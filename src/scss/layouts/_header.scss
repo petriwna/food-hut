@@ -1,0 +1,42 @@
+.header {
+background: var(--color-primary-header);
+
+  &__logo {
+    width: 97px;
+    height: 62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-tablet){
+      width: 121px;
+      height: 71px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-image: $dark-logo;
+    }
+
+    @media (prefers-color-scheme: light) {
+      background-image: $light-logo;
+    }
+  }
+
+  &__button {
+    width: 162px;
+    height: 45px;
+    font-size: 18px;
+    background-color: var(--color-secondary-red);
+
+    &:hover {
+      background-color: var(--color-secondary-red-hover);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: $light-secondary-color-text;
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: $dark-secondary-color-text;
+    }
+  }
+}

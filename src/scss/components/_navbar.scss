@@ -1,0 +1,29 @@
+.navbar {
+  font-size: 18px;
+
+  &__link {
+    @media (prefers-color-scheme: dark) {
+      color: $dark-secondary-color-text;
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: $light-secondary-color-text;
+    }
+  }
+
+  &__button {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__icon {
+    @media (prefers-color-scheme: dark) {
+      fill: $dark-secondary-color-text;
+    }
+
+    @media (prefers-color-scheme: light) {
+      fill: $light-secondary-color-text;
+    }
+  }
+}

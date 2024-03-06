@@ -1,6 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import "utils/fonts";
+@import "utils/themes";
 @import "utils/variables";
 @import "base";
 
+@import "components/navbar";
+
+@import "layouts/header";
